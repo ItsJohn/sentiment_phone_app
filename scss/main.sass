@@ -1,0 +1,46 @@
+$positive-colour: #2F47FF
+$negative-colour: #FF4D3C
+$background-color: #F5F5F5
+$text-color: rgba(13, 4, 13, 0.8)
+$button-color: #008080
+$font-color: #cac8c8
+
+$max-height: 100%
+$small-height: 25%
+
+$max-width: 100%
+$near-max-width: 90%
+$extra-extra-large-width: 1000px
+$extra-large-width: 500px
+$large-width: 100px
+
+$large-margin: 50px
+$medium-margin: 10px
+$reset-margin: 0
+
+$medium-padding: 10px
+$small-padding: 5px
+
+@import "pages/home.sass"
+@import "pages/analysis.sass"
+
+*
+      margin: 0
+      padding: 0
+
+body
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      background-attachment: fixed
+
+.container
+      width: $max-width
+      background-color: $background-color
+      color: $text-color
+
+.centerScreen
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center

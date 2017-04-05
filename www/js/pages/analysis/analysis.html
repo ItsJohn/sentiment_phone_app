@@ -1,0 +1,25 @@
+<ion-content>
+      <h1 class="term">{{term}}</h1>
+      <div class="graphContainer">
+            <span ng-click="goBack()">
+                  Back
+            </span>
+            <legend data='legend'></legend>
+            <p>
+                  This is the sentiment between
+            </p>
+            <p>{{min | date:'EEE d MMM yyyy h:mm a'}}</p>
+            <p>to</p>
+            <p>{{max | date:'EEE d MMM yyyy h:mm a'}}</p>
+            <pieChart data="pie" radius="100" ng-show="!showLoading"></pieChart>
+
+            <p>
+                  The posts about this topic
+            </p>
+            <div class="tweets">
+                  <div class="well" ng-repeat="tweet in tweets" ng-class="tweet['sentiment']">
+                        <span >{{tweet['text']}}</span>
+                  </div>
+            </div>
+      </div>
+</ion-content>

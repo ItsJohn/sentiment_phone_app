@@ -1,0 +1,32 @@
+
+.search_term_container
+      @extend .centerScreen
+      height: $max-height
+      width: $max-width
+      .searchForm
+            width: $max-width
+            input
+                  margin: $medium-margin
+                  width: $near-max-width
+                  padding: $medium-padding
+                  box-shadow: black 0px 0px 1px
+            .search_btn
+                  padding: $medium-padding
+                  color: white
+                  border: thin black solid
+                  background-color: $button-color
+                  cursor: pointer
+                  p
+                        margin: $reset-margin
+      .trends
+            width: $near-max-width
+            height: $small-height
+            overflow-y: scroll
+            text-align: center
+            .words
+                  cursor: pointer
+      .platformContainer
+            white-space: nowrap
+            .platform
+                  display: block
+                  margin: $reset-margin

@@ -7,7 +7,7 @@
       homeService.$inject = ['$http'];
       function homeService($http) {
             this.getKeywords = function() {
-                  var url = 'http://192.168.1.8:5000/api/keywords';
+                  var url = 'https://opinionmining.herokuapp.com/api/keywords';
                   return $http({
                         method: 'GET',
                         url: url,
@@ -17,7 +17,7 @@
                   });
             }
             this.getSentiment = function(term) {
-                  var url = 'http://192.168.1.8:5000/api/retrieveSentimentData';
+                  var url = 'https://opinionmining.herokuapp.com/api/retrieveSentimentData';
                   return $http({
                         method: 'GET',
                         url: url,

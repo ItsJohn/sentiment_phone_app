@@ -31,11 +31,8 @@
                         'color': negativeColour
                   }];
 
-                  console.log(info);
-
                   vm.max = new Date(data['newest'])
                   vm.min = new Date(data['latest'])
-                  console.log(vm.max, vm.min);
 
                   vm.pie = [{
                         'name': 'positive',
